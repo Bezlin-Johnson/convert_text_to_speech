@@ -35,6 +35,8 @@ After that create a new repl and select language HTML, CSS, JS.
 <!doctype html>
 
 <head>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -109,6 +111,8 @@ window.speechSynthesis - This property of the Javascript window object is used t
 <!doctype html>
 
 <head>
+ <script src="script.js"></script>
+ <link rel="stylesheet" href="style.css">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>s
 
