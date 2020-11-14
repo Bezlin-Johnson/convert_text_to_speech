@@ -4,8 +4,7 @@ description: "Let's build a website to convert text to speech."
 author: "@bezlin6mechminerz"
 ---
 
-Ever wondered if you could get a computer to read aloud what you typed.Well, thats what we are going to do today. A simple webpage where we type something and the computer reads that
-aloud.Sounds complicated?!It isn't.We are going to have a lot of fun with what we will be making.
+Ever wondered if you could get a computer to read aloud what you typed. Well, thats what we are going to do today. A simple webpage where we type something and the computer reads that aloud. Sounds complicated?! It isn't. We are going to have a lot of fun with what we will be making.
 
 The workshop will look something like this.
 
