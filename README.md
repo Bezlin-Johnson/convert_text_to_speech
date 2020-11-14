@@ -4,12 +4,11 @@ description: "Let's build a website to convert text to speech."
 author: "@bezlin6mechminerz"
 ---
 
-Ever wondered if you could get a computer to read aloud what you typed.Well, thats what we are going to do today. A simple webpage where we type something and the computer reads that
-aloud.Sounds complicated?!It isn't.We are going to have a lot of fun with what we will be making.
+Ever wondered if you could get a computer to read aloud what you typed. Well, thats what we are going to do today. A simple webpage where we type something and the computer reads that aloud. Sounds complicated?! It isn't. We are going to have a lot of fun with what we will be making.
 
 The workshop will look something like this.
 
-<img alt="output image" src="https://cloud-6fps2m25z.vercel.app/0screenshot_2020-10-22_at_11.57.24_pm.png">
+![demo](https://cloud-6fps2m25z.vercel.app/0screenshot_2020-10-22_at_11.57.24_pm.png)
 
 View a [live demo](https://pleasecheckthis.netlify.app)
 
@@ -23,7 +22,7 @@ We will be using [Repl.it.](https://repl.it) It is awesome because you can code 
 
 After that create a new repl and select language HTML, CSS, JS.
 
-<img alt="repl.it image" src="https://cloud-ns067nqq8.vercel.app/0screenshot_2020-10-23_at_12.10.50_am.png">
+![repl](https://cloud-ns067nqq8.vercel.app/0screenshot_2020-10-23_at_12.10.50_am.png)
 
 ## Let's Code!
 
@@ -58,7 +57,7 @@ Now let's make a div in the centre of the page and lets name it centre.
 ```
 
 Inside the div, we will make an input field where we will type.
-And, we add a button that reads what we just typed.Let's start with the text input. To add a multi-line text input, we use the HTML tag - textarea. It let's us type over multiple lines(rows).
+And, we add a button that reads what we just typed. Let's start with the text input. To add a multi-line text input, we use the HTML tag - textarea. It let's us type over multiple lines(rows).
 
 ```html
 <textarea
