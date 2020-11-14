@@ -10,7 +10,7 @@ The workshop will look something like this.
 
 ![demo](https://cloud-6fps2m25z.vercel.app/0screenshot_2020-10-22_at_11.57.24_pm.png)
 
-View a [live demo](https://pleasecheckthis.netlify.app)
+View a [live demo](https://vengefulenchantingworker--five-nine.repl.co/)
 
 View the [final code](https://repl.it/repls/VengefulEnchantingWorker)
 
