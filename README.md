@@ -46,6 +46,7 @@ After that create a new repl and select language HTML, CSS, JS.
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 ```
+
 We add this to make the webpage responsive.
 
 Now let's make a div in the centre of the page and lets name it centre.
@@ -53,6 +54,7 @@ Now let's make a div in the centre of the page and lets name it centre.
 ```html
 <div class="center"></div>
 ```
+
 Inside the div, we will make an input field where we will type.
 And, we add a button that reads what we just typed.Let's start with the text input. To add a multi-line text input, we use the HTML tag - textarea. It let's us type over multiple lines(rows).
 
@@ -64,15 +66,15 @@ And, we add a button that reads what we just typed.Let's start with the text inp
   placeholder="Enter text to play."
 ></textarea>
 ```
+
 Here, we are giving a name to class and specifying the input type, which here is text.We give it an id so we can get what was typed(value) later on.Also,we add a placeholder,which is a short hint about what you are supposed to do in an input field.
-Now, let's make the button. 
+Now, let's make the button.
 
 ```html
 <button class="button" onclick="convert()">Play</button>
 ```
 
 Just like before, we named a class.We also added an onclick event, which as the name suggests is what happens when the button is clicked.We will execute a function - convert() , when the button is clicked.Now lets define the fucntion.
-
 
 ```html
 <script>
@@ -90,6 +92,7 @@ Just like before, we named a class.We also added an onclick event, which as the 
 ```js
 const msg = document.getElementById("text-to-speech").value;
 ```
+
 Remember when we created and iput field earlier.This is when we get its value and assign to a the variable msg.
 
 In this fucntion, we will be using the following interfaces:
@@ -107,28 +110,19 @@ window.speechSynthesis - This property of the Javascript window object is used t
 
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+</head>s
 
 <body>
  <div class="center">
  <textarea class="inputfield" type="text" id="text-to-speech" placeholder="Enter text to play."></textarea>
  <br />
  <button class="button" onclick="convert()">Play</button>
- <script>
- function convert() {
- const msg = document.getElementById("text-to-speech").value;
- const speech = new SpeechSynthesisUtterance();
- speech.lang = "en";
- speech.text = msg;
- speech.pitch = 1;
- window.speechSynthesis.speak(speech);
- }
- </script>
  </div>
 </body>
 
 </html>
 ```
+
 ### Adding styling using css
 
-Everything works now but it does look that great. How about we add some colors and make it look good.     
+Everything works now but it does look that great. How about we add some colors and make it look good.
