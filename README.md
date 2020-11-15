@@ -34,6 +34,8 @@ After that create a new repl and select language HTML, CSS, JS.
 <!doctype html>
 
 <head>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -73,10 +75,11 @@ Now, let's make the button.
 <button class="button" onclick="convert()">Play</button>
 ```
 
-Just like before, we named a class.We also added an onclick event, which as the name suggests is what happens when the button is clicked.We will execute a function - convert() , when the button is clicked.Now lets define the fucntion.
+Just like before, we named a class.We also added an onclick event, which as the name suggests is what happens when the button is clicked.We will execute a function - convert() , when the button is clicked.
+
+Now lets define the function in script.js.
 
 ```html
-<script>
   function convert() {
     const msg = document.getElementById("text-to-speech").value;
     const speech = new SpeechSynthesisUtterance();
@@ -85,7 +88,6 @@ Just like before, we named a class.We also added an onclick event, which as the 
     speech.pitch = 1;
     window.speechSynthesis.speak(speech);
   }
-</script>
 ```
 
 ```js
@@ -108,6 +110,8 @@ window.speechSynthesis - This property of the Javascript window object is used t
 <!doctype html>
 
 <head>
+ <script src="script.js"></script>
+ <link rel="stylesheet" href="style.css">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>s
 
@@ -125,3 +129,154 @@ window.speechSynthesis - This property of the Javascript window object is used t
 ### Adding styling using css
 
 Everything works now but it does look that great. How about we add some colors and make it look good.
+Go to style.css and add some styles.
+
+
+```css
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 200px black;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  font-family: helvetica;
+}
+```
+This is the div we named centre and here we change its position relative to the top and left to place it in centre of the screen. We also set the fonst and background colors here.
+
+
+```css
+.inputfield {
+  width: 500px;
+  font-size: 18px;
+  background-color: black;
+  color: deeppink;
+  border-width: 0px;
+}
+
+.inputfield:focus {
+  outline: none;
+}
+```
+CSS as you have just read is pretty easy to understand by just reading.  You can refer to the CSS documentation for more details [here](https://developer.mozilla.org/en-US/docs/Web/CSS).
+
+Now let's style our button.
+```css
+.button {
+  color: black;
+  background-color: deeppink;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 50px;
+  border-width: 0px;
+  height: 40px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: deeppink;
+}
+```
+### Styling done, it looks great 
+```html
+<style>
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 200px black;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    font-family: helvetica;
+  }
+
+  .inputfield {
+    width: 500px;
+    font-size: 18px;
+    background-color: black;
+    color: deeppink;
+    border-width: 0px;
+  }
+
+  .inputfield:focus {
+    outline: none;
+  }
+
+  .button {
+    color: black;
+    background-color: deeppink;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 50px;
+    border-width: 0px;
+    height: 40px;
+  }
+
+  .button:hover {
+    background-color: #fff;
+    color: deeppink;
+  }
+</style>
+```
+
+## Final Code
+
+```html
+<!doctype html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+ .center {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ box-shadow: 0px 0px 200px black;
+ padding: 10px;
+ text-align: center;
+ background-color: black;
+ font-family: helvetica;
+ }
+
+ .inputfield {
+ width: 500px;
+ font-size: 18px;
+ background-color: black;
+ color: deeppink;
+ border-width: 0px;
+ }
+
+ .inputfield:focus {
+ outline: none;
+ }
+
+ .button {
+ color: black;
+ background-color: deeppink;
+ width: 200px;
+ font-size: 20px;
+ border-radius: 50px;
+ border-width: 0px;
+ height: 40px;
+ }
+
+ .button:hover {
+ background-color: #fff;
+ color: deeppink;
+ }
+```
+![run it](https://cloud-5m2nwfs8r.vercel.app/ezgif.com-video-to-gif-4.gif)
+
+### Now it's your to hack
+
+Now you know how to turn text to speech. You can do a lot with it. Make it read stories,recite poems,rap some songs that you wrote,send greeting.
+Have fun.
+
+### Modified by other hackers
